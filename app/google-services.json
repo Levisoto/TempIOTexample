@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "242820337314",
+    "firebase_url": "https://iot-example-bb1c2.firebaseio.com",
+    "project_id": "iot-example-bb1c2",
+    "storage_bucket": "iot-example-bb1c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242820337314:android:867e35b0c329c1c4",
+        "android_client_info": {
+          "package_name": "com.example.laxus.termometroiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242820337314-l74hug2juf8hq673b99b8sb2kqh4gj3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQYVQgO7xcoSsgyuzY9i-73n2l-BUsjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242820337314:android:3ff7c56b1271c757",
+        "android_client_info": {
+          "package_name": "com.example.levelforall.leviss.tempiotexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242820337314-vmatp63lid13v5sn5d1to6ht9p1qrh07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.levelforall.leviss.tempiotexample",
+            "certificate_hash": "67977000809d12adf0b2bfbad7f1c41388da8f45"
+          }
+        },
+        {
+          "client_id": "242820337314-l74hug2juf8hq673b99b8sb2kqh4gj3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQYVQgO7xcoSsgyuzY9i-73n2l-BUsjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242820337314-l74hug2juf8hq673b99b8sb2kqh4gj3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,10 +7,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.jjoe64.graphview.GraphView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:id="@+id/graph" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plotear"
+            android:id="@+id/switch1"/>
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
 
 
     <ListView
@@ -20,9 +33,7 @@
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:gravity="center_vertical"
-        android:checkMark="?android:attr/textCheckMark"
-        android:paddingLeft="?android:attr/listPreferredItemPaddingStart"
-        android:paddingRight="?android:attr/listPreferredItemPaddingEnd" >
+        android:checkMark="?android:attr/textCheckMark" >
 
     </ListView>
 

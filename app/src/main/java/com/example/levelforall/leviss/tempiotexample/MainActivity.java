@@ -1,7 +1,6 @@
 package com.example.levelforall.leviss.tempiotexample;
 
 import android.graphics.Color;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 //Post post = dataSnapshot.getValue(Post.class);
                 //Log.d(TAG, " "+dataSnapshot.getValue());
 
-                Double real = (Double) dataSnapshot.child("realtime").getValue();
+                Float real = dataSnapshot.child("realtime").getValue(Float.class);
 
                 if (plotData){
                     addEntry(real);
@@ -161,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         return set;
     }
 
-    private void addEntry(Double event) {
+    private void addEntry(Float event) {
 
         LineData data = mChart.getData();
 
@@ -176,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 //            data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
-            data.addEntry(new Entry(set.getEntryCount(), event.floatValue()), 0);
+            data.addEntry(new Entry(set.getEntryCount(), event), 0);
             data.notifyDataChanged();
 
             // let the chart know it's data has changed
@@ -205,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                 while (true){
                     plotData = true;
                     try {
-                        Thread.sleep(10);
+                        Thread.sleep(20);
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
@@ -259,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
         leftAxis.setTextColor(Color.WHITE);
         leftAxis.setDrawGridLines(false);
         leftAxis.setAxisMaximum(200f);
-        leftAxis.setAxisMinimum(0f);
+        leftAxis.setAxisMinimum(-200f);
         leftAxis.setDrawGridLines(true);
 
         YAxis rightAxis = mChart.getAxisRight();
